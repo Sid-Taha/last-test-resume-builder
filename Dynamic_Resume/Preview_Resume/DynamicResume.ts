@@ -39,9 +39,9 @@ window.addEventListener('load', () => {
 
 
   
-  const username = name ? name.toLowerCase().replace(/\s+/g, '') : 'user'; // Generate username from the name
-  const baseUrl = 'https://interactive-resume-builder-sigma.vercel.app'; // Your Vercel deployment URL
-  const uniqueResumeUrl = `${baseUrl}/${username}`; // Create unique URL
+  const username = name ? name.toLowerCase().replace(/\s+/g, '-') : 'user'; // Generate username from the name
+  const baseUrl = 'http://127.0.0.1:5501/Dynamic_Resume/Preview_Resume/DynamicResume.html'; // Your Vercel deployment URL
+  const uniqueResumeUrl = `${baseUrl}?/${username}`; // Create unique URL
 
   // Set the resume link in the DOM
   const resumeLink = document.getElementById('resumeLink') as HTMLAnchorElement;
