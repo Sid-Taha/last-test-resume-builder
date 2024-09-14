@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Input</title>
+  <link rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Enter Your Resume Details</h1>
+
+    <form id="resumeForm">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="input-group">
+          <label for="jobTitle">Job Title:</label>
+          <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="linkedin">LinkedIn:</label>
+          <input type="text" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile" required>
+        </div>
+      </fieldset>
+
+      <!-- Add Profile Picture Upload Input -->
+      <fieldset>
+        <legend>Profile Picture</legend>
+        <div class="input-group">
+          <label for="profilePic">Upload Profile Picture:</label>
+          <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+        </div>
+      </fieldset>
+
+      <!-- Education -->
+      <fieldset>
+        <legend>Education</legend>
+        <div class="input-group">
+          <label for="degree">Degree:</label>
+          <input type="text" id="degree" name="degree" placeholder="Enter your degree" required>
+        </div>
+        <div class="input-group">
+          <label for="university">University:</label>
+          <input type="text" id="university" name="university" placeholder="Enter your university" required>
+        </div>
+        <div class="input-group">
+          <label for="gradYear">Graduation Year:</label>
+          <input type="number" id="gradYear" name="gradYear" placeholder="Enter your graduation year" required>
+        </div>
+      </fieldset>
+
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills</legend>
+        <div class="input-group">
+          <label for="skill1">Skill 1:</label>
+          <input type="text" id="skill1" name="skill1" placeholder="Enter a skill" required>
+        </div>
+        <div class="input-group">
+          <label for="skill2">Skill 2:</label>
+          <input type="text" id="skill2" name="skill2" placeholder="Enter a skill">
+        </div>
+        <div class="input-group">
+          <label for="skill3">Skill 3:</label>
+          <input type="text" id="skill3" name="skill3" placeholder="Enter a skill">
+        </div>
+      </fieldset>
+
+      <!-- Work Experience -->
+      <fieldset>
+        <legend>Work Experience</legend>
+        <div class="input-group">
+          <label for="jobTitleExp">Job Title:</label>
+          <input type="text" id="jobTitleExp" name="jobTitleExp" placeholder="Enter your job title">
+        </div>
+        <div class="input-group">
+          <label for="company">Company:</label>
+          <input type="text" id="company" name="company" placeholder="Enter your company">
+        </div>
+        <div class="input-group">
+          <label for="startYear">Start Year:</label>
+          <input type="number" id="startYear" name="startYear" placeholder="Enter your start year">
+        </div>
+        <div class="input-group">
+          <label for="endYear">End Year:</label>
+          <input type="number" id="endYear" name="endYear" placeholder="Enter your end year or 'Present'">
+        </div>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <a href="../Preview_Resume/DynamicResume.html"><button type="submit" id="generateResumeBtn">Generate
+          Resume</button></a>
+    </form>
+  </div>
+
+
+  <script src="formScript.js"></script>
+  <script src="../manipulationScript.js"></script>
+</body>
+
+</html>

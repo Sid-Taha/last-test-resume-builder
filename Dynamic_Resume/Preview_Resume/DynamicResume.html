@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="DynamicStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="mainDiv">
+
+      <!-- Personal Information -->
+      <section>
+        <div class="personal">
+          <div>
+            <h1><span id="form_name"></span></h1>
+            <h2><span id="jobTitle"></span></h2>
+          </div>
+          <img id="profilePicPreview" src="" alt="Profile Picture">
+        </div>
+
+        <div class="contact-info">
+          <p class="para"><i class="fa-solid fa-phone"></i> Phone: <span id="phone">03001234567</span></p>
+          <p class="para"><i class="fa-solid fa-envelope"></i> Email: <span id="email">Taha_Ahmed@gmail.com</span></p>
+          <p class="para"><i class="fa-brands fa-linkedin"></i> LinkedIn: <span id="linkedin">TahaAhmed01</span></p>
+        </div>
+      </section>
+
+      <!-- Objective -->
+      <section id="objectiveSec">
+        <h2 class="heading">Objective</h2>
+        <p class="contPara">Detail-oriented and motivated software developer with a strong foundation in HTML, CSS, JavaScript, and TypeScript. Passionate about building user-friendly web applications and enhancing code efficiency through clean and maintainable solutions. Eager to contribute to dynamic projects and collaborate with teams to deliver impactful results.</p>
+      </section>
+
+      <!-- Education -->
+      <section id="eduSec">
+        <h2 class="heading">Education:</h2>
+        <p class="contPara"><span id="degree">Bachelor of Science in Computer Science</span></p>
+        <p class="contPara"><span id="university">XYZ University</span>, <span id="gradYear">2020</span></p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skillSec">
+        <h2 class="heading">Skills:</h2>
+        <ul>
+          <li><span id="skill1" class="contPara">JavaScript</span></li>
+          <li><span id="skill2" class="contPara">TypeScript</span></li>
+          <li><span id="skill3" class="contPara">HTML & CSS</span></li>
+        </ul>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="workExpSec" class="work-experience">
+        <h2 class="heading">Work Experience:</h2>
+        <p class="contPara"><span id="jobTitleExp">Software Developer</span> at <span id="company">ABC Company</span>, <span id="startYear">2021</span> - <span id="endYear">Present</span></p>
+      </section>
+    </div>
+
+    <!-- Buttons -->
+    <div id="btnDiv">
+      <button class="btn" id="printBtn">Print</button>
+      <button class="btn" id="editBtn">Edit</button>
+      <div class="share-container">
+        <a href="#" id="resumeLink" class="btn">Shareable Resume Link</a>
+        <button class="btn" id="copyLinkBtn">Copy Link</button>
+      </div>
+    </div>
+    
+
+
+    <script src="DynamicResume.js"></script>
+    <script src="../manipulationScript.js"></script>
+  </body>
+</html>
